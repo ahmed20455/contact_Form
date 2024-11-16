@@ -45,9 +45,13 @@ Root Directory|-- backend
       cd frontend
       npm start
 Now, you can access the application in local host:3000  in your device.
+ 
+ ---
 
 ## Database- MongoDb
 I choosed mongodb over other databases, because this can handle the unstructured data in a very effective manner, if in future, we were extending the app to add a picture of a contact, it can be in a good way in mongodb.
+ 
+---
 
 ## Challenges
 During the development, I faced a challenge in the editing functionality and to check that user doesn't enter empty fields, I resolved this by going through GFG articles and through some youtube videos.
