@@ -28,7 +28,7 @@ export default function Contable() {
   useEffect(() => {
     const fetchContacts = async () => {
       try {
-        const response = await fetch('http://localhost:3001/demo');
+        const response = await fetch('https://orange-space-engine-p595xgxwpxgf55x-3001.app.github.dev/demo');
         const data = await response.json();
         if (response.ok) {
           setContacts(data.data);
@@ -49,7 +49,7 @@ export default function Contable() {
     if (window.confirm('Are you sure you want to delete this contact?')) {
       setProcessing(true);
       try {
-        const response = await fetch(`http://localhost:3001/demo/${id}`, {
+        const response = await fetch(`https://orange-space-engine-p595xgxwpxgf55x-3001.app.github.dev/demo/${id}`, {
           method: 'DELETE',
         });
         if (response.ok) {
@@ -94,7 +94,7 @@ export default function Contable() {
 
     setProcessing(true);
     try {
-      const response = await fetch(`http://localhost:3001/demo/${editContact._id}`, {
+      const response = await fetch(`https://orange-space-engine-p595xgxwpxgf55x-3001.app.github.dev/demo/${editContact._id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(editContact),
